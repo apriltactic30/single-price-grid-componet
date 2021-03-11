@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+html{
+    background-color: hsl(204, 43%, 93%);
+    font-size:16px;
+    font-family:'Karla', sans-serif;
+}
+*{
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+section{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    padding: 60px 30px 60px 30px;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+   	box-shadow: 2px 5px 14px 3px #00000024;
+}
+.item1,.item2,.item3{
+    padding:35px;
+}
+
+/*item1 styling*/
+.item1{
+    background-color:white;
+}
+#header1{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size:25px;
+}
+#para1{
+    color: hsl(71, 73%, 54%);
+    font-weight: 400;
+    font-size:18px;
+    margin:15px 0px 15px 0px;
+}
+#para2{
+    color:hsl(218, 22%, 67%); 
+    line-height: 1.5rem;
+}
+
+/*item2 styling*/
+.item2{
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+}
+#header3{
+    color:white;
+    font-weight:700;
+    font-size:18px;
+    
+}
+#para3{
+    margin-top: 15px;
+    margin-bottom:20px;
+}
+ 
+/*item3 styling*/
+.item3{
+    background-color:  #4abebd;
+    color: hsl(204, 43%, 93%);  
+}
+#header4{
+    color:white;
+    font-weight:700;
+    font-size:18px;
+}
+#para4{ 
+    line-height: 1.6;
+     margin-top: 15px;
+}
+
+/*button styling*/
+#button{
+    background-color:hsl(71, 73%, 54%);
+    border:none;
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    font-size:16px;
+    padding: 20px 25px;
+    width:100%;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px 1px #00000033;    
+}
+#button:hover{
+  background-color: #9fbc1d;
+  color: white;    
+}
+
+/*footer styling*/
+.attribution{
+    font-size: 11px; 
+    text-align: center;
+    color:hsl(218, 22%, 67%);
+}
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 700px){
+	.grid-container{
+		grid-template-columns: 1fr 1fr;
+	}
+	.item1{
+		grid-area: 1 / 1 / 2 / 3;
+	}
+	.item2,.item3{
+		grid-row: 2;
+	}
+}
